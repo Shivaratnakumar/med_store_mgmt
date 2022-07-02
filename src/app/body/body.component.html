@@ -1,0 +1,7 @@
+
+<div class="body" [ngClass]="getBodyClass()">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">        
+        <h3 style="color: #fff;padding: 0.5rem;">{{title}}</h3>    
+    </nav>
+    <router-outlet (activate)="setHeader()"></router-outlet>
+</div>
